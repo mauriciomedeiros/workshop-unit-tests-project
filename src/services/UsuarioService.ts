@@ -26,7 +26,7 @@ export class UsuarioService {
     return linhaSalva
   }
 
-  criarUsuarioELinha(nome: String, cpf: String, email: String, telefone: String): String {
+  registrar(nome: String, cpf: String, email: String, telefone: String): String {
     try {
       const usuario: Usuario = this.criarUsuario(nome, cpf, email, telefone);
       const linha: Linha = this.criarLinha(cpf, telefone)
